@@ -283,8 +283,8 @@
             <div class="card">
                 <h2>Dream Setlist 🎧</h2>
                 <div class="setlist-container">
-                    <div class="song-item"><div class="song-number">1</div> Only the Brave (Opener)</div>
-                    <div class="song-item"><div class="song-number">2</div> Golden</div>
+                    <div class="song-item"><div class="song-number">1</div> Only Angel (Opener)</div>
+                    <div class="song-item"><div class="song-number">2</div> Woman</div>
                     <div class="song-item"><div class="song-number">3</div> Daylight</div>
                     <div class="song-item"><div class="song-number">4</div> She</div>
                     <div class="song-item"><div class="song-number">5</div> Matilda</div>
@@ -311,6 +311,10 @@
                     <div class="pin-card">
                         <img src="https://i.pinimg.com/1200x/b3/a0/13/b3a0130d9cbeb493451e1da55f545859.jpg" alt="Pink Fashion">
                         <p>Monochrome pink statement look</p>
+                    </div>
+                    <div class="pin-card">
+                        <img src="(https://i.pinimg.com/736x/8e/22/70/8e2270eaf95525df9a30eca843a3bf17.jpg)" alt="sparkles">
+                        <p>sparkle statement</p>
                     </div>
                 </div>
             </div>

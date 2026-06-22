@@ -301,15 +301,15 @@
                 
                 <div class="moodboard">
                     <div class="pin-card">
-                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=600" alt="Pastel Fashion">
+                        <img src="https://i.pinimg.com/736x/4d/ad/27/4dad270a9e763e421fd1ad1dedf074bf.jpg?q=80&w=600" alt="Pastel Fashion">
                         <p>Cream & Blush Pink tailoring</p>
                     </div>
                     <div class="pin-card">
-                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=600" alt="Vintage Aesthetic">
+                        <img src="https://i.pinimg.com/736x/f3/bc/f6/f3bcf63a30e8a669c4404832758aa4dd.jpg?q=80&w=600" alt="Vintage Aesthetic">
                         <p>Retro crochet & pearls vibe</p>
                     </div>
                     <div class="pin-card">
-                        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=600" alt="Pink Fashion">
+                        <img src="https://i.pinimg.com/1200x/b3/a0/13/b3a0130d9cbeb493451e1da55f545859.jpg" alt="Pink Fashion">
                         <p>Monochrome pink statement look</p>
                     </div>
                 </div>

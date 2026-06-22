@@ -1,1 +1,358 @@
-# harryallthetimediscooccasionally
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Styles - The London Residency 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Quicksand:wght@400..700&family=Unbounded:wght@400..900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- Color Palette (Beige & Pink Only) --- */
+        :root {
+            --cream-bg: #fdfaf6;
+            --soft-beige: #f5ede3;
+            --warm-tan: #e6d7c3;
+            --pastel-pink: #fbc4c4;
+            --blush-pink: #fae3e3;
+            --dark-berry: #5c4141;
+            --white: #ffffff;
+        }
+
+        /* --- Global Styles --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--cream-bg);
+            color: var(--dark-berry);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px 60px 20px;
+        }
+
+        /* --- Header & Cute Font --- */
+        header {
+            text-align: center;
+            padding: 60px 20px 30px 20px;
+            background: linear-gradient(180deg, var(--blush-pink) 0%, var(--cream-bg) 100%);
+        }
+
+        h1 {
+            font-family: 'DynaPuff', cursive;
+            font-size: 3.5rem;
+            color: var(--dark-berry);
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        .residency-badge {
+            font-family: 'Unbounded', sans-serif;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            background-color: var(--white);
+            padding: 8px 16px;
+            border-radius: 50px;
+            border: 2px solid var(--pastel-pink);
+            display: inline-block;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        /* --- Navigation Menu (Simulating Pages) --- */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 12px 24px;
+            border: none;
+            background-color: var(--soft-beige);
+            color: var(--dark-berry);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover, .nav-btn.active {
+            background-color: var(--pastel-pink);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(251, 196, 196, 0.4);
+        }
+
+        /* --- Page / Section Content --- */
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .card {
+            background-color: var(--white);
+            border-radius: 24px;
+            padding: 40px;
+            border: 1px solid var(--soft-beige);
+            box-shadow: 0 10px 30px rgba(92, 65, 65, 0.03);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-family: 'DynaPuff', cursive;
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        /* --- Home Tab Styling --- */
+        .residency-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+            text-align: left;
+        }
+
+        .countdown-box {
+            background-color: var(--blush-pink);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            border: 2px dashed var(--pastel-pink);
+        }
+
+        .countdown-box h3 {
+            font-family: 'Unbounded', sans-serif;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        #timer {
+            font-family: 'DynaPuff', cursive;
+            font-size: 2.8rem;
+            color: var(--dark-berry);
+        }
+
+        /* --- Setlist Tab Styling --- */
+        .setlist-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .song-item {
+            display: flex;
+            align-items: center;
+            background-color: var(--soft-beige);
+            margin: 15px 0;
+            padding: 18px 25px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: background-color 0.2s;
+        }
+
+        .song-item:hover {
+            background-color: var(--blush-pink);
+        }
+
+        .song-number {
+            background-color: var(--white);
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            margin-right: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* --- Outfits Tab Styling --- */
+        .outfit-intro {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            font-size: 1.1rem;
+        }
+
+        .moodboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .pin-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 15px;
+            border: 1px solid var(--soft-beige);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+            text-align: left;
+        }
+
+        .pin-card img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        .pin-card p {
+            font-weight: 700;
+            font-size: 1rem;
+            padding-left: 5px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.9rem;
+            color: #a89494;
+        }
+
+        /* --- Responsive View --- */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.6rem; }
+            h2 { font-size: 1.8rem; }
+            .residency-grid { grid-template-columns: 1fr; text-align: center; }
+            .card { padding: 25px; }
+            #timer { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="residency-badge">London Residency 2026 👑</div>
+        <h1>Harry Styles</h1>
+        <p style="font-size: 1.2rem; font-weight: 600;">12 Nights at Wembley Stadium</p>
+    </header>
+
+    <div class="container">
+        
+        <nav>
+            <button class="nav-btn active" onclick="openTab('home')">Home & Dates</button>
+            <button class="nav-btn" onclick="openTab('setlist')">Dream Setlist</button>
+            <button class="nav-btn" onclick="openTab('outfits')">Outfit Moodboard</button>
+        </nav>
+
+        <div id="home" class="tab-content active">
+            <div class="card">
+                <h2>The Residency ✨</h2>
+                <div class="residency-grid">
+                    <div>
+                        <p style="font-size: 1.2rem; margin-bottom: 15px;">
+                            Harry is taking over London from <strong>June 12th to July 4th, 2026</strong> for an iconic 12-night run.
+                        </p>
+                        <p>Get ready for high energy, beautiful crowd tailoring, and thousands of fans singing along in the heart of the UK.</p>
+                    </div>
+                    <div class="countdown-box">
+                        <h3>Countdown to Final Night:</h3>
+                        <div id="timer">Loading...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="setlist" class="tab-content">
+            <div class="card">
+                <h2>Dream Setlist 🎧</h2>
+                <div class="setlist-container">
+                    <div class="song-item"><div class="song-number">1</div> Only the Brave (Opener)</div>
+                    <div class="song-item"><div class="song-number">2</div> Golden</div>
+                    <div class="song-item"><div class="song-number">3</div> Daylight</div>
+                    <div class="song-item"><div class="song-number">4</div> She</div>
+                    <div class="song-item"><div class="song-number">5</div> Matilda</div>
+                    <div class="song-item"><div class="song-number">6</div> As It Was</div>
+                    <div class="song-item"><div class="song-number">7</div> Kiwi (Encore)</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="outfits" class="tab-content">
+            <div class="card">
+                <h2>Concert Outfits 🎀</h2>
+                <p class="outfit-intro">The dress code is strictly pastel pinks, creams, and gorgeous vintage textures. Here are some of the aesthetic vibes curated for the shows:</p>
+                
+                <div class="moodboard">
+                    <div class="pin-card">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=600" alt="Pastel Fashion">
+                        <p>Cream & Blush Pink tailoring</p>
+                    </div>
+                    <div class="pin-card">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=600" alt="Vintage Aesthetic">
+                        <p>Retro crochet & pearls vibe</p>
+                    </div>
+                    <div class="pin-card">
+                        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=600" alt="Pink Fashion">
+                        <p>Monochrome pink statement look</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Created for the 3-Day Coding Challenge 🤍</p>
+    </footer>
+
+    <script>
+        // Tab switching functionality
+        function openTab(tabId) {
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+
+        // Countdown Timer to July 4, 2026
+        const targetDate = new Date("July 4, 2026 20:00:00").getTime();
+
+        setInterval(function() {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+
+            document.getElementById("timer").innerHTML = d + "d " + h + "h " + m + "m ";
+
+            if (difference < 0) {
+                document.getElementById("timer").innerHTML = "SHOWTIME! 🍓";
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>

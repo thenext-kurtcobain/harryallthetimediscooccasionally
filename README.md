@@ -313,7 +313,7 @@
                         <p>Monochrome pink statement look</p>
                     </div>
                     <div class="pin-card">
-                        <img src="(https://i.pinimg.com/736x/8e/22/70/8e2270eaf95525df9a30eca843a3bf17.jpg)" alt="sparkles">
+                        <img src="https://i.pinimg.com/736x/8e/22/70/8e2270eaf95525df9a30eca843a3bf17.jpg" alt="sparkles">
                         <p>sparkle statement</p>
                     </div>
                 </div>
